@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
 .hero {
@@ -91,7 +92,7 @@ img.white {
 
 footer {
     width: 60%;
-    margin:50px auto auto auto; 
+    margin:50px auto 75px auto; 
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
