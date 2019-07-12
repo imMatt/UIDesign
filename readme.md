@@ -11,7 +11,7 @@ This repository contains a number small projects, primarily for developing my sk
 Landing Page for Investing Startup Ticcr
 Original Design by Crashtor - https://dribbble.com/shots/6136782-Ticcr-The-finance-guy
 
-Live preview at [Open in Browser](https://htmlpreview.github.io/?https://github.com/imMatt/UIDesign/blob/master/ticcr/index.html)
+Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.githubusercontent.com/imMatt/UIDesign/master/Ticcr/index.html)
 
 ![Ticcr UI Design](https://raw.githubusercontent.com/imMatt/UIDesign/master/Ticcr/screenshot.png "Ticcr UI Design")
 
@@ -20,7 +20,7 @@ Live preview at [Open in Browser](https://htmlpreview.github.io/?https://github.
 Responsive Login Page
 Original Design by Zach Thomson - https://dribbble.com/shots/6644390-Daily-UI-1-Sign-Up/
 
-Live preview at [Open in Browser](https://htmlpreview.github.io/?https://github.com/imMatt/UIDesign/blob/master/SplitAuth/login.html)
+Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.githubusercontent.com/imMatt/UIDesign/master/SplitAuth/login.html)
 
 ![Modern Responsive Login](https://raw.githubusercontent.com/imMatt/UIDesign/master/SplitAuth/screenshot.png "Modern Responsive Login")
 
