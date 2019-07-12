@@ -22,6 +22,6 @@ Original Design by Zach Thomson - https://dribbble.com/shots/6644390-Daily-UI-1-
 
 Live preview at [Open in Browser](https://htmlpreview.github.io/?https://github.com/imMatt/UIDesign/blob/master/SplitAuth/login.html)
 
-![Modern Responsive Login](https://raw.githubusercontent.com/imMatt/UIDesign/master/Ticcr/screenshot.png "Ticcr UI Design")
+![Modern Responsive Login](https://raw.githubusercontent.com/imMatt/UIDesign/master/SplitAuth/screenshot.png "Modern Responsive Login")
 
 ### Interested in getting in touch? contact me at matthewallengda@gmail
