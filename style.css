@@ -1,0 +1,116 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+    background-image: url("./hero.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: black;
+
+    height: 1000px;
+    width: 100%;
+}
+
+.content {
+    margin-left: 200px;
+    height: 100%;
+    width: 450px;
+
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+
+}
+
+.inner > h1 {
+    color: white;
+    font-size: 72px;
+    letter-spacing: 2px;
+}
+
+.inner > h2 {
+    color: white;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 24px;
+    width: 150px;
+    border-radius: 50px;
+    outline: none;
+    border:none;
+    color: white;
+}
+
+.signin {
+    background: black;
+    transition: background-color 200ms linear;
+    border: 2px solid white;
+}
+
+.signin:hover {
+    background: #1c1c1c;
+}
+
+.signup {
+    transition: background-color 200ms linear;
+    background: #6070ff;
+}
+
+.signup:hover {
+    background: #5360d4;
+}
+
+p.downloads {
+    color: white;
+    vertical-align: middle;
+}
+
+img.white {
+    filter: brightness(0) invert(1);
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.padleft {
+    padding-left: 36px;
+}
+
+.padtop {
+    padding-top: 36px;
+}
+
+footer {
+    width: 60%;
+    margin:50px auto auto auto; 
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 30px 30px;
+    grid-template-areas: ". . . . ." ". . . . ." ". . . . .";
+
+    vertical-align: bottom;
+    font-size: 14px;
+}
+
+.logotext {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.columnheader {
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+}
