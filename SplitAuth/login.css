@@ -1,0 +1,267 @@
+@font-face {
+  font-family: trueno;
+  font-weight: 100;
+  src: url("font/truenoultlt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: trueno;
+  font-weight: 400;
+  src: url("font/truenolt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: trueno;
+  font-weight: 900;
+  src: url("font/truenobd.otf") format("opentype");
+}
+
+
+body {
+     font-family: 'trueno', sans-serif;
+}
+
+.wrapper {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows:  1fr;
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+     grid-template-areas: "a b"
+}
+
+#formside {
+     grid-area: a;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     background: #f6f6f6;
+     background: -webkit-linear-gradient(right, #fafafa, #ffffff);
+     background: -moz-linear-gradient(right, #fafafa, #ffffff);
+     background: -o-linear-gradient(right, #fafafa, #ffffff);
+     background: linear-gradient(to left, #fafafa, #ffffff);
+}
+
+#formside > .inner {
+     width:400px;
+
+}
+
+#formside > .inner > h1 {
+     font-weight: 900;
+     padding-bottom: 26px;
+     font-size: 32px;
+     color: #2cd9ae;
+}
+
+.logo {
+     max-width: 100%;
+}
+
+label {
+     display: block;
+     color:#bbb;
+     font-weight: 400;
+     margin-bottom: 20px;
+}
+
+input {
+     margin-top: 8x;
+     display: block;
+     width: 100%;
+     font-size: 16px;
+     padding: 10px;
+     vertical-align: middle;
+
+     color: #111;
+     border:1px solid #bbb;
+     border-radius: 3px;
+}
+
+input::placeholder {
+    color: #999
+}
+
+a {
+  color: #24b992;
+}
+
+a:hover {
+  color: #2bd1a5;
+}
+
+input:focus {
+     outline: none;
+     border: 1px solid #24b992;
+}
+
+input[type='password']::placeholder {
+  font-size: initial;
+}
+
+input[type='password'] {
+  -webkit-text-security: disc;
+}
+
+.usericon, .passicon {
+  background-position: 12px 12px, calc(100% - 12px) 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.usericon {
+  background-image: url("./iconuser.png");
+}
+
+.usericon.good {
+  background-image: url("./iconuser.png"), url("./icongood.png");
+}
+
+.usericon.bad {
+  background-image: url("./iconuser.png"), url("./iconbad.png");
+}
+
+.passicon {
+  background-image: url("./iconpass.png");
+}
+
+.passicon.good {
+  background-image: url("./iconpass.png"), url("./icongood.png");
+}
+
+.passicon.bad {
+  background-image: url("./iconpass.png"), url("./iconbad.png");
+}
+
+p {
+  color: #999;
+}
+
+p.small {
+  font-size: 11px;
+  margin: 0px;
+}
+
+p.alttext {
+  margin-top:24px;
+}
+
+button {
+     transition: opacity 250ms ease;
+
+     border:1px solid #bbb;
+     border-radius: 3px;
+
+     width: 100%;
+     font-size: 16px;
+     font-weight: 400;
+
+     padding:10px;
+     color: #fff;
+     outline: none;
+     border: none;
+     box-shadow: none;
+
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#24b992+0,26c89d+100 */
+     background: #2cd9ae; /* Old browsers */
+     background: -moz-radial-gradient(center, ellipse cover,  #2cd9ae 0%, #26c89d 100%); /* FF3.6-15 */
+     background: -webkit-radial-gradient(center, ellipse cover,  #2cd9ae 0%,#26c89d 100%); /* Chrome10-25,Safari5.1-6 */
+     background: radial-gradient(ellipse at center,  #2cd9ae 0%,#26c89d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cd9ae', endColorstr='#26c89d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+
+button:hover {
+     opacity: .9;
+}
+
+#promoside {
+     grid-area: b;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     background-position: center;
+     background-size: cover;
+     background-image: radial-gradient(
+          rgba(44, 248, 194, 0.85), 
+          rgba(46, 248, 194, 0.75)
+        ),url("https://cdn4.pitchfork.com/longform/790/85_Atmosphere_Pooneh_Ghana_07-20QM6A8440.jpg"); 
+
+
+}
+
+
+#promoside > .inner {
+     width: 400px;
+     text-align: center;
+}
+
+#promoside > .inner h1 {
+     color : #fff;
+     font-weight: 900;
+     font-size: 128px;
+     margin-bottom: 0px;
+}
+
+#promoside > .inner h2 {
+     color : #fff;
+     font-weight: 100;
+     font-size: 36px;
+     margin-top:0px;
+}
+
+#promoside > .inner h3 {
+     color : #fff;
+     font-weight: 100;
+     font-size: 14px;
+}
+
+@media screen and (max-width: 1279px) {
+     .wrapper {
+          background-image: radial-gradient(
+            rgba(44, 248, 194, 0.85), 
+            rgba(46, 248, 194, 0.75)
+          ),url("https://cdn4.pitchfork.com/longform/790/85_Atmosphere_Pooneh_Ghana_07-20QM6A8440.jpg");
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     #formside {
+        background: none;
+     }
+
+     #formside {
+        width: 80%;
+     }
+
+     #formside > .inner > h1 {
+          color: white;
+     }
+
+     input {
+
+     }
+
+     label {
+          color: white;
+     }
+     
+
+     #promoside {
+          display: none;
+     }
+
+     p {
+          color: white;
+     }
+
+}
