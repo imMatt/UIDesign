@@ -11,7 +11,7 @@ This repository contains a number small projects, primarily for developing my sk
 Instagram Layout on Mobile within the Browser
 Inspired by Instagram, mobile based on the Oppo R15 Pro
 
-Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.githubusercontent.com/imMatt/UIDesign/master/Insta/instagram.html)
+Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.githubusercontent.com/imMatt/UIDesign/master/Insta/Instagram.html)
 
 ![Instagram Layout on Mobile](https://raw.githubusercontent.com/imMatt/UIDesign/master/Insta/screenshot.png "Instagram Layout on Mobile")
 
