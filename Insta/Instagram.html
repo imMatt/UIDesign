@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./instagram.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+</head>
+<html>
+
+<body>
+  <div class="wrapper">
+    <div class="oppo">
+
+      <div class="topbar">
+        <div class="notchouter">
+          <div class="leftdent">
+            <p id="time"></p>
+            <p>Instagram</p>
+          </div>
+
+          <div class="rightdent">
+            <p id="date">2:44PM</p>
+          </div>
+
+          <div class="fill">
+            <div class="notchfill leftfill"></div>
+            <div class="notchfill rightfill"></div>
+          </div>
+          <div class="notch">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+            <div class="ir"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="app">
+          <div class="header">
+            <h1>mightycarmods
+              <i class="fa fa-angle-down"></i>
+            </h1>
+            <h1>
+              <i class="fa fa-bars"></i>
+            </h1>
+          </div>
+
+          <div class="profile">
+            <div class="avatar">
+              <img src="./img/avatar.jpg" />
+            </div>
+
+            <stat>
+              <h1>561</h1>
+              <h2>Posts</h2>
+            </stat>
+            <stat>
+              <h1>493K</h1>
+              <h2>Followers</h2>
+            </stat>
+            <stat>
+              <h1>15</h1>
+              <h2>Following</h2>
+            </stat>
+          </div>
+
+          <div class="description">
+            <p>Mighty Car Mods</p>
+            <p>TV Show</p>
+            <p>Official Instagram account of Marty & MOOG from Mighty Car Mods.
+              Note: We make an effort to read every message but <more>...more</more>
+            </p>
+            <a>youtube.com/mightycarmods</a>
+            <p>Followed by <b>lockykennedy75</b>, <b>james_gillham</b> and <b>6 others</b></p>
+          </div>
+
+          <div class="galleryheader">
+            <div class="button active">
+                <i class="fa fa-th"></i>
+            </div>
+
+            <div class="button">
+                <i class="fa fa-user-circle"></i>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+
+          <div class="menubar">
+            <div class="menuitem">
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="menuitem">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="menuitem">
+                <i class="fa fa-plus-square"></i>
+            </div>
+            <div class="menuitem">
+                <i class="fa fa-heart"></i>
+            </div>
+            <div class="menuitem">
+                <i class="fa fa-user"></i> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="botbar">
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+      "November", "December"
+    ];
+
+    function setDate() {
+      var day = days[new Date().getDay()];
+      var month = months[new Date().getMonth()];
+      var date = new Date().getDate();
+
+      var datestring = day + " " + month + " " + date;
+      document.querySelectorAll("#date")[0].innerText = datestring;
+    }
+
+    function setTime() {
+      var time = new Date().toLocaleTimeString();
+
+      var hours = new Date().getHours() + "";
+      if(hours.length == 1){
+        hours = "0" + "" + hours;
+      }
+
+      var minutes = new Date().getMinutes() + "";
+      if(minutes.length == 1){
+        minutes = "0" + "" + minutes;
+      }
+
+      document.querySelectorAll("#time")[0].innerText = hours + ":" + minutes;
+    }
+
+    setTime();
+    setDate();
+    setInterval(setTime, 60 * 1000);
+  </script>
+</body>
+
+</html>
