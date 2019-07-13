@@ -52,13 +52,45 @@
         </div>
       </div>
 
-      <div class="screen">
+      <div id="menuscreen" class="screen hide">
+        <div class="app">
+            <div class="header">
+              <h1>mightycarmods</h1>
+            </div>
+
+            <div class="list">
+              <div class="item">
+                <p><i class="fa fa-history"></i> Archive</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-hourglass-half"></i> Your activity</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-qrcode"></i> Nametag</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-bookmark"></i> Saved</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-list"></i> Close Friends</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-user-plus"></i> Discover people</p>
+              </div>
+              <div class="item">
+                <p><i class="fa fa-facebook"></i> Open Facebook</p>
+              </div>
+            </div>
+        </div> 
+      </div>
+
+      <div id="mainscreen" class="screen" onclick="onClickMainscreen()">
         <div class="app">
           <div class="header">
             <h1>mightycarmods
               <i class="fa fa-angle-down"></i>
             </h1>
-            <h1>
+            <h1 onclick="showMenu()">
               <i class="fa fa-bars"></i>
             </h1>
           </div>
@@ -193,6 +225,23 @@
     setTime();
     setDate();
     setInterval(setTime, 60 * 1000);
+
+
+    function onClickMainscreen(){
+      var menuitem = document.querySelector("#menuscreen");
+
+      if(!menuitem.classList.contains("hide")){
+        menuitem.classList.add("hide")
+      }
+      console.log("yeee")
+    }
+
+    function showMenu(){
+      setTimeout(()=>{
+        document.querySelector("#menuscreen").classList.remove("hide");
+      }, 20);
+    }
+
   </script>
 </body>
 
