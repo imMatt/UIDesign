@@ -16,6 +16,14 @@ Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.git
 ![Instagram Layout on Mobile](https://raw.githubusercontent.com/imMatt/UIDesign/master/Insta/screenshot.png "Instagram Layout on Mobile")
 
 
+## BMW 8 Series Landing Page
+Landing Page for the new BMW 8 Series.
+
+Live preview at [Open in Browser](https://htmlpreview.github.io/?https://raw.githubusercontent.com/imMatt/UIDesign/master/Bmw8Series/index.html)
+
+![Landing Page](https://raw.githubusercontent.com/imMatt/UIDesign/master/Bmw8Series/screenshot.png "Landing Page")
+
+
 ##  Ticcr
 Landing Page for Investing Startup Ticcr
 Original Design by Crashtor - https://dribbble.com/shots/6136782-Ticcr-The-finance-guy
